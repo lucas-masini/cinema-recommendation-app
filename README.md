@@ -208,7 +208,6 @@ Plusieurs améliorations pourraient être apportées :
 - amélioration du **moteur de recommandation**
 - ajout d’un **filtrage collaboratif**
 - ajout de **préférences utilisateurs**
-- déploiement complet de l'application en ligne
 
 ---
 
