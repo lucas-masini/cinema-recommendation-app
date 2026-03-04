@@ -1,5 +1,13 @@
 # 🎬 CineOuest — Système de recommandation de films
 
+## 🌐 Démo de l'application
+
+L'application est disponible en ligne via Streamlit Cloud :
+
+🔗 **Accéder à l'application :**  
+
+https://cinema-recommendation-app.streamlit.app
+
 ## 📌 Contexte du projet
 
 Dans le cadre d’un projet de **Data Analysis / Machine Learning**, notre équipe a été missionnée par un cinéma fictif nommé **CineOuest**, situé dans la région **Pays de la Loire**, afin de développer un service numérique pour accompagner son activité.
@@ -213,3 +221,17 @@ Ce projet m'a permis de développer des compétences en :
 - **Machine Learning appliqué aux systèmes de recommandation**
 - développement d’**applications interactives avec Streamlit**
 - **visualisation et exploration de données**
+
+---
+
+# 👨‍💻 Contribution personnelle
+
+Ce projet a été réalisé en équipe dans le cadre d'un projet de formation.
+
+Mes principales contributions ont été :
+
+- participation à la **préparation et au filtrage des données** issues des bases IMDb et TMDB
+- contribution à la **création de la base de données finale (`imdb_final.csv`)**
+- participation au développement de **l'application Streamlit**
+- mise en place et tests de l'interface utilisateur
+- participation à la **présentation du projet (PowerPoint)**
