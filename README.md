@@ -1,129 +1,141 @@
-# 🎬 CineOuest – Système de recommandation de films
+# 🎬 CineOuest — Système de recommandation de films
 
-## Contexte du projet
+## 📌 Contexte du projet
 
-Dans le cadre d’un projet de Data Analysis / Machine Learning, notre équipe a été missionnée par un cinéma fictif nommé **CineOuest**, situé dans la région **Pays de la Loire**, afin de développer un service numérique pour accompagner son activité.
+Dans le cadre d’un projet de **Data Analysis / Machine Learning**, notre équipe a été missionnée par un cinéma fictif nommé **CineOuest**, situé dans la région **Pays de la Loire**, afin de développer un service numérique pour accompagner son activité.
 
 L’objectif est de proposer une **application permettant aux spectateurs de découvrir de nouveaux films grâce à un système de recommandation**, similaire à ceux utilisés par les plateformes de streaming.
 
-L'application permet également de consulter différentes statistiques sur les films et d'explorer une base de données enrichie.
+L'application permet également de :
+
+- consulter différentes **statistiques sur les films**
+- explorer une **base de données enrichie**
+- découvrir **de nouvelles recommandations personnalisées**
 
 ---
 
-# Objectifs du projet
+# 🎯 Objectifs du projet
 
 Le projet repose sur trois objectifs principaux :
 
-- analyser les données du marché du cinéma
-- exploiter des bases de données publiques sur les films
-- développer un système de recommandation basé sur le Machine Learning
+- 📊 **Analyser les données du marché du cinéma**
+- 🎥 **Exploiter des bases de données publiques sur les films**
+- 🤖 **Développer un système de recommandation basé sur le Machine Learning**
 
 Le résultat final est une **application interactive développée avec Streamlit** permettant :
 
-- de rechercher un film
-- d'obtenir des informations détaillées
-- de découvrir des films similaires
+- 🔎 de rechercher un film
+- 📖 d'obtenir des informations détaillées
+- 🎯 de découvrir des films similaires
 
 ---
 
-# Sources de données
+# 📚 Sources de données
 
-Le projet s'appuie principalement sur deux sources de données :
+Le projet s'appuie principalement sur deux sources de données.
 
-### IMDb Datasets
+## IMDb Datasets
+
 Base de données publique contenant des informations sur :
 
-- les films
-- les acteurs
-- les réalisateurs
-- les notes des utilisateurs
-- les genres
+- les films  
+- les acteurs  
+- les réalisateurs  
+- les notes des utilisateurs  
+- les genres  
 
-https://datasets.imdbws.com/
-
-### TMDB API (The Movie Database)
-
-L'API TMDB a été utilisée afin d'enrichir les données avec :
-
-- les **affiches des films**
-- les **résumés**
-- certaines **métadonnées supplémentaires**
-
-https://www.themoviedb.org/documentation/api
+🔗 https://datasets.imdbws.com/
 
 ---
 
-# Préparation des données
+## TMDB API (The Movie Database)
 
-Les datasets IMDb contiennent **plusieurs millions de films et d’acteurs**, ce qui nécessite un important travail de préparation avant l'analyse.
+L'API **TMDB** a été utilisée afin d'enrichir les données avec :
+
+- 🖼 les **affiches des films**
+- 📝 les **résumés**
+- 📊 certaines **métadonnées supplémentaires**
+
+🔗 https://www.themoviedb.org/documentation/api
+
+---
+
+# 🧹 Préparation des données
+
+Les datasets **IMDb** contiennent **plusieurs millions de films et d’acteurs**, ce qui nécessite un important travail de préparation avant l'analyse.
 
 Plusieurs étapes ont été réalisées :
 
-- sélection des tables pertinentes
-- nettoyage des données
-- jointure entre les différentes sources
-- enrichissement avec les données TMDB
-- filtrage afin d'obtenir une base exploitable pour l'analyse et le modèle de recommandation
+- sélection des **tables pertinentes**
+- **nettoyage des données**
+- **jointure entre les différentes sources**
+- enrichissement avec les données **TMDB**
+- **filtrage des données** afin d'obtenir une base exploitable pour l'analyse et le modèle de recommandation
 
 Ce travail a permis de construire une base finale optimisée :
+
+
 imdb_final.csv
 
 
-contenant notamment :
+Cette base contient notamment :
 
-- titre du film
-- année de sortie
-- genres
-- acteurs principaux
-- réalisateurs
-- note IMDb
-- nombre de votes
-- synopsis
-- poster du film
+- 🎬 titre du film  
+- 📅 année de sortie  
+- 🏷 genres  
+- 🎭 acteurs principaux  
+- 🎥 réalisateurs  
+- ⭐ note IMDb  
+- 👍 nombre de votes  
+- 📝 synopsis  
+- 🖼 poster du film  
 
 ---
 
-# Système de recommandation
+# 🤖 Système de recommandation
 
 Le moteur de recommandation repose sur une approche **Content-Based Filtering**.
 
 Le principe consiste à recommander des films similaires à un film donné en analysant leurs caractéristiques.
 
-### Étapes du modèle
+## Étapes du modèle
 
-1. Transformation des données textuelles en vecteurs avec **TF-IDF**
-2. Création d'une matrice de caractéristiques combinant :
+1️⃣ Transformation des données textuelles en vecteurs avec **TF-IDF**
+
+2️⃣ Création d'une matrice de caractéristiques combinant :
 
 - synopsis
 - genres
 - acteurs
 - réalisateurs
 
-3. Calcul de similarité entre films avec l’algorithme :
+3️⃣ Calcul de similarité entre films avec l’algorithme :
+
+
 K-Nearest Neighbors (KNN)
 
 
-Le système retourne ensuite une liste de films similaires.
+Le système retourne ensuite une **liste de films similaires**.
 
 ---
 
-# Application Streamlit
+# 💻 Application Streamlit
 
 Une application interactive a été développée avec **Streamlit** afin de permettre aux utilisateurs de tester le système de recommandation.
 
-Fonctionnalités principales :
+## Fonctionnalités principales
 
-### Accueil
+### 🏠 Accueil
 
 - affichage d’un **carrousel d’affiches de films**
 
-### Recherche de film
+### 🔎 Recherche de film
 
 - recherche par **titre**
-- affichage des informations du film
+- affichage des **informations du film**
 - suggestions de **films similaires**
 
-### Recherche par filtres
+### 🎛 Recherche par filtres
 
 Possibilité de filtrer les films par :
 
@@ -132,11 +144,11 @@ Possibilité de filtrer les films par :
 - genre
 - période de sortie
 
-### Film aléatoire
+### 🎲 Film aléatoire
 
-Proposition d’un film choisi aléatoirement avec recommandations associées.
+Proposition d’un **film choisi aléatoirement** avec recommandations associées.
 
-### Exploration de la base
+### 📊 Exploration de la base
 
 Affichage de statistiques comme :
 
@@ -146,56 +158,59 @@ Affichage de statistiques comme :
 
 ---
 
-# Technologies utilisées
+# 🛠 Technologies utilisées
 
-- **Python**
-- **Pandas**
-- **Scikit-learn**
-- **TF-IDF Vectorizer**
-- **K-Nearest Neighbors**
-- **Streamlit**
-- **Matplotlib**
-- **IMDb datasets**
-- **TMDB API**
+- 🐍 **Python**
+- 🐼 **Pandas**
+- 🤖 **Scikit-learn**
+- 📊 **TF-IDF Vectorizer**
+- 🔎 **K-Nearest Neighbors**
+- 🌐 **Streamlit**
+- 📈 **Matplotlib**
+- 🎬 **IMDb datasets**
+- 🖼 **TMDB API**
 
 ---
 
-# Structure du projet
+# 📁 Structure du projet
 
+```
 cinema_recommandation-app
 │
 ├── app
-│   └── app_streamlit.py
+│ └── app_streamlit.py
 │
 ├── data
-│   └── imdb_final.csv
+│ └── imdb_final.csv
 │
 ├── images
-│   ├── bandeau.png
-│   └── salle_jaune_sombre.png
+│ ├── bandeau.png
+│ └── salle_jaune_sombre.png
 │
 ├── requirements.txt
 │
 └── README.md
+```
 
 ---
 
-# Perspectives d'amélioration
+# 🚀 Perspectives d'amélioration
 
 Plusieurs améliorations pourraient être apportées :
 
-- amélioration du moteur de recommandation
-- ajout d’un filtrage collaboratif
-- ajout de préférences utilisateurs
+- amélioration du **moteur de recommandation**
+- ajout d’un **filtrage collaboratif**
+- ajout de **préférences utilisateurs**
+- déploiement complet de l'application en ligne
 
 ---
 
-# Compétences développées
+# 🎓 Compétences développées
 
 Ce projet m'a permis de développer des compétences en :
 
-- préparation et nettoyage de données
-- exploitation d’API
-- Machine Learning appliqué aux systèmes de recommandation
-- développement d’applications interactives avec Streamlit
-- visualisation et exploration de données
+- préparation et **nettoyage de données**
+- exploitation d’**API**
+- **Machine Learning appliqué aux systèmes de recommandation**
+- développement d’**applications interactives avec Streamlit**
+- **visualisation et exploration de données**
