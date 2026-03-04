@@ -41,15 +41,15 @@ Le résultat final est une **application interactive développée avec Streamlit
 
 ### 🏠 Page d'accueil
 
-![Accueil](images/home.png)
+![Accueil](images/home.PNG)
 
 ### 🔎 Recherche de films
 
-![Recherche](images/search.png)
+![Recherche](images/search.PNG)
 
 ### 🎯 Recommandations
 
-![Recommandations](images/recommendations.png)
+![Recommandations](images/recommendations.PNG)
 
 ---
 
@@ -207,9 +207,9 @@ cinema_recommandation-app
 │ ├── bandeau.png
 │ └── salle_jaune_sombre.png
 │ └── LOGO_DROITE.png
-│ └── home.png
-│ └── search.png
-│ └── recommendations.png
+│ └── home.PNG
+│ └── search.PNG
+│ └── recommendations.PNG
 │
 ├── requirements.txt
 ├── imdb_final.csv
