@@ -37,6 +37,21 @@ Le résultat final est une **application interactive développée avec Streamlit
 - 🎯 de découvrir des films similaires
 
 ---
+# 📸 Aperçu de l'application
+
+### 🏠 Page d'accueil
+
+![Accueil](images/home.png)
+
+### 🔎 Recherche de films
+
+![Recherche](images/search.png)
+
+### 🎯 Recommandations
+
+![Recommandations](images/recommendations.png)
+
+---
 
 # 📚 Sources de données
 
@@ -192,6 +207,9 @@ cinema_recommandation-app
 │ ├── bandeau.png
 │ └── salle_jaune_sombre.png
 │ └── LOGO_DROITE.png
+│ └── home.png
+│ └── search.png
+│ └── recommendations.png
 │
 ├── requirements.txt
 ├── imdb_final.csv
