@@ -179,13 +179,12 @@ cinema_recommandation-app
 │
 ├── app
 │ └── app_streamlit.py
-│
-├── data
 │ └── imdb_final.csv
 │
 ├── images
 │ ├── bandeau.png
 │ └── salle_jaune_sombre.png
+│ └── LOGO_DROITE.png
 │
 ├── requirements.txt
 │
