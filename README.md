@@ -187,7 +187,6 @@ cinema_recommandation-app
 │
 ├── app
 │ └── app_streamlit.py
-│ └── imdb_final.csv
 │
 ├── images
 │ ├── bandeau.png
@@ -195,6 +194,7 @@ cinema_recommandation-app
 │ └── LOGO_DROITE.png
 │
 ├── requirements.txt
+├── imdb_final.csv
 │
 └── README.md
 ```
